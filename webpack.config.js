@@ -26,7 +26,7 @@ const config = {
       exposes: {
         './Starwars': './src/App',
       },
-      shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
+      shared: { react: { eager: true, singleton: true }, 'react-dom': { eager: true, singleton: true } },
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
